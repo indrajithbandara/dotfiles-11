@@ -5,7 +5,7 @@
 - name: Tap brew formulae
   homebrew_tap: name={{ item }} state=present
   with_items:
-    - crisidev/homebrew-chunkwm
+    - brew tap caskroom/fonts
 
 - name: Install libraries with Homebrew
   homebrew: name={{ item }} state=latest
@@ -60,6 +60,9 @@
     - dash
     - karabiner-elements
     - viscosity
+    - whatsapp
+    - font-hack-nerd-font
+    - font-firacode-nerd-font
 
 - name: Cleanup Brew packages
   command: brew cleanup
