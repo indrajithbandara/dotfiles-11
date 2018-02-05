@@ -37,12 +37,14 @@
     - htop
     - fasd
     - tmux
+    - reattach-to-user-namespace
+    - redis
+    - noti
 
 - name: Install apps with Homebrew Cask
   homebrew_cask: name={{ item }} state=present
   with_items:
     - vlc
-    - aerial
     - google-chrome
     - skype
     - alfred
@@ -54,10 +56,7 @@
     - ngrok
     - flux
     - spectacle
-    - radiant-player
     - postman
-    - macdown
-    - coconutbattery
     - dash
     - karabiner-elements
     - viscosity

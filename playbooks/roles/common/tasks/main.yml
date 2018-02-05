@@ -16,13 +16,11 @@
     - .config
     - .gitconfig
     - .tmux
-    - .atom
 
 - name: Install tmux-plugin-manager
   git:
     - repo: https://github.com/tmux-plugins/tpm
     - dest: ~/.tmux/plugins/tpm
-
 
 - name: Install dein
   raw: mkdir ~/.dein && curl -fsSL https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh | bash -s ~/.dein
