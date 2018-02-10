@@ -36,6 +36,7 @@
     - redis
     - noti
     - koekeishiya/formulae/skhd
+    - kubectl
 
 - name: Tap brew formulae
   homebrew_tap: name={{ item }} state=present
