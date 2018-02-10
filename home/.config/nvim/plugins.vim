@@ -32,11 +32,13 @@ call dein#add('christoomey/vim-tmux-navigator')
 call dein#add('ryanoasis/vim-devicons')
 call dein#add('airblade/vim-gitgutter')
 
+
 " JS plugins
 " call dein#add('posva/vim-vue')
 " call dein#add('ternjs/tern_for_vim')
 call dein#add('carlitux/deoplete-ternjs')
 call dein#add('pangloss/vim-javascript')
+call dein#add('ElmCast/elm-vim')
 " call dein#add('othree/yajs.vim')
 " call dein#add('othree/es.next.syntax.vim')
 

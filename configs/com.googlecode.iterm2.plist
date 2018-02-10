@@ -1061,9 +1061,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>650 589 620 392 0 0 1920 1177 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>101 401 1018 447 0 0 1920 1177 </string>
+	<string>705 525 1018 447 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>191 5 1637 1172 0 0 1920 1177 </string>
+	<string>160 160 1600 858 0 0 1920 1177 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>160 160 1600 858 0 0 1920 1177 </string>
 	<key>NeverWarnAboutShortLivedSessions_2FB2DDEB-900B-4691-ADBA-771E92088CF7</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_2FB2DDEB-900B-4691-ADBA-771E92088CF7_selection</key>
@@ -2435,7 +2437,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-01-01T13:39:37Z</date>
+	<date>2018-02-10T07:43:27Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2453,9 +2455,9 @@
 	<key>TabViewType</key>
 	<integer>1</integer>
 	<key>TerminalMargin</key>
-	<integer>5</integer>
+	<integer>20</integer>
 	<key>TerminalVMargin</key>
-	<integer>2</integer>
+	<integer>20</integer>
 	<key>UseAdaptiveFrameRate</key>
 	<false/>
 	<key>UseBorder</key>
