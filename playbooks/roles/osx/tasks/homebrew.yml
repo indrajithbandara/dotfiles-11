@@ -36,6 +36,7 @@
     - redis
     - noti
     - koekeishiya/formulae/skhd
+    - chunkwm
     - kubectl
 
 - name: Tap brew formulae
