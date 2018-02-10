@@ -15,12 +15,18 @@
     - .zshrc
     - .config
     - .gitconfig
-    - .tmux
+    - .tmux.conf
+    - .chunkwmrc
+    - .skhdrc
 
 - name: Install tmux-plugin-manager
-  git:
-    - repo: https://github.com/tmux-plugins/tpm
-    - dest: ~/.tmux/plugins/tpm
+  git: repo=https://github.com/tmux-plugins/tpm dest=~/.tmux/plugins/tpm
+
+- name: Create dein folder
+  file: path=~/.dein state=directory
+
+- name: Fetch dein install script
+  get_url: url=https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh dest=/tmp/dein_install.sh
 
 - name: Install dein
-  raw: mkdir ~/.dein && curl -fsSL https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh | bash -s ~/.dein
+  script: /tmp/dein_install.sh ~/.dein

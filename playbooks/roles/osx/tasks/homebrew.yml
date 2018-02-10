@@ -2,13 +2,8 @@
 - name: Update Homebrew
   homebrew: update_homebrew=yes
 
-- name: Tap brew formulae
-  homebrew_tap: name={{ item }} state=present
-  with_items:
-    - brew tap caskroom/fonts
-
 - name: Install libraries with Homebrew
-  homebrew: name={{ item }} state=latest
+  homebrew: name={{ item }} state=present
   with_items:
     - tig
     - gettext
@@ -40,9 +35,21 @@
     - reattach-to-user-namespace
     - redis
     - noti
+    - koekeishiya/formulae/skhd
+
+- name: Tap brew formulae
+  homebrew_tap: name={{ item }} state=present
+  with_items:
+    - caskroom/fonts
+    - crisidev/homebrew-chunkwm
+
+- name: Run this task before homebrew_cask module, so that sudo cache gets refreshed.
+  command: echo none
+  become: yes
 
 - name: Install apps with Homebrew Cask
   homebrew_cask: name={{ item }} state=present
+  ignore_errors: yes
   with_items:
     - vlc
     - google-chrome
