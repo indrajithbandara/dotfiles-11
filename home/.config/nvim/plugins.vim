@@ -14,6 +14,7 @@ call dein#add('Shougo/dein.vim')
 
 " Add or remove your plugins here:
 call dein#add('junegunn/seoul256.vim')
+call dein#add('hzchirs/vim-material')
 call dein#add('Shougo/deoplete.nvim')
 call dein#add('vim-airline/vim-airline')
 call dein#add('https://github.com/vim-airline/vim-airline-themes')

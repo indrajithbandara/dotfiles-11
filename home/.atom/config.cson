@@ -1,0 +1,20 @@
+"*":
+  core:
+    closeDeletedFileTabs: true
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "pure-syntax"
+    ]
+    titleBar: "hidden"
+  editor:
+    fontFamily: "Fira Code"
+    fontSize: 12
+    invisibles:
+      space: " "
+    showInvisibles: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "87ab05ed-15ed-49b4-b844-85d80d6c70ee"
+  welcome:
+    showOnStartup: false

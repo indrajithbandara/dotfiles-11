@@ -1,6 +1,6 @@
 " Set color scheme
-colo seoul256
-let g:airline_theme='deus'
+colo vim-material
+let g:airline_theme='material'
 
 set nocursorline
 set relativenumber number
@@ -43,7 +43,7 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " Enable the list of buffers
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 0
 
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'

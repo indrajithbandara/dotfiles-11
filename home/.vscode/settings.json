@@ -1,0 +1,18 @@
+{
+    "editor.fontSize": 13,
+    "editor.fontFamily": "Monaco",
+    "editor.tabSize": 2,
+    "editor.cursorBlinking": "solid",
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "editor.renderIndentGuides": false,
+    "editor.roundedSelection": false,
+    "editor.smoothScrolling": true,
+    "git.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.renderLineHighlight": "none",
+    "editor.lineNumbers": "relative",
+    "vscode_custom_css.imports": [
+        "file:///Users/vladimiriacob/dotfiles/vscode/styles.css"
+    ]
+}

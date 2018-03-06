@@ -4,6 +4,11 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+# Iterm2 title bar color
+echo -e "\033]6;1;bg;red;brightness;38\a"
+echo -e "\033]6;1;bg;green;brightness;50\a"
+echo -e "\033]6;1;bg;blue;brightness;56\a"
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -46,3 +51,4 @@ alias flushdns="sudo killall -HUP mDNSResponder"
 alias npmglob="npm list -g --depth=0"
 alias nv='f -t -e nvim'
 alias iosim='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/'
+export PATH="/usr/local/opt/python@2/bin:$PATH"
