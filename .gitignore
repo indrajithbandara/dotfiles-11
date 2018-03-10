@@ -1,3 +1,14 @@
 home/.config/asciinema
 home/.config/configstore
 home/.config/gcloud
+.DS_Store
+home/.config/configstore/update-notifier-npm.json
+home/.config/FastoRedis/
+home/.config/NuGet/
+home/.config/gtk-2.0/
+home/.config/htop/
+home/.config/neofetch/
+home/.config/ranger/
+home/.config/stetic/
+home/.config/xbuild/
+home/.config/yarn/

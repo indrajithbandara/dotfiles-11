@@ -23,10 +23,10 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Tab navigatin mappings
-map tn <Esc>:enew<CR>
-map tx <Esc>:bprevious<CR>:bdelete #<CR>
-map tl <Esc>:bnext<CR>
-map th <Esc>:bprevious<CR>
+" map tn <Esc>:enew<CR>
+" map tx <Esc>:bprevious<CR>:bdelete #<CR>
+" map tl <Esc>:bnext<CR>
+" map th <Esc>:bprevious<CR>
 
 " split navigation
 nnoremap <C-h> <C-w>h
@@ -70,15 +70,15 @@ nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
 
 " airline idx tab nav
-nmap t1 <Plug>AirlineSelectTab1
-nmap t2 <Plug>AirlineSelectTab2
-nmap t3 <Plug>AirlineSelectTab3
-nmap t4 <Plug>AirlineSelectTab4
-nmap t5 <Plug>AirlineSelectTab5
-nmap t6 <Plug>AirlineSelectTab6
-nmap t7 <Plug>AirlineSelectTab7
-nmap t8 <Plug>AirlineSelectTab8
-nmap t9 <Plug>AirlineSelectTab9
+" nmap t1 <Plug>AirlineSelectTab1
+" nmap t2 <Plug>AirlineSelectTab2
+" nmap t3 <Plug>AirlineSelectTab3
+" nmap t4 <Plug>AirlineSelectTab4
+" nmap t5 <Plug>AirlineSelectTab5
+" nmap t6 <Plug>AirlineSelectTab6
+" nmap t7 <Plug>AirlineSelectTab7
+" nmap t8 <Plug>AirlineSelectTab8
+" nmap t9 <Plug>AirlineSelectTab9
 
 " make c-r smart on autocomplete
 inoremap <return> <C-R>=Ulti_ExpandOrEnter()<CR>
