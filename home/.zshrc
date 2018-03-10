@@ -5,9 +5,9 @@
 #
 
 # Iterm2 title bar color
-echo -e "\033]6;1;bg;red;brightness;38\a"
-echo -e "\033]6;1;bg;green;brightness;50\a"
-echo -e "\033]6;1;bg;blue;brightness;56\a"
+# echo -e "\033]6;1;bg;red;brightness;38\a"
+# echo -e "\033]6;1;bg;green;brightness;50\a"
+# echo -e "\033]6;1;bg;blue;brightness;56\a"
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then

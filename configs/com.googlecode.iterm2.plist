@@ -1536,7 +1536,7 @@
 		</dict>
 	</dict>
 	<key>DarkThemeHasBlackTitlebar</key>
-	<true/>
+	<false/>
 	<key>Default Bookmark Guid</key>
 	<string>2FB2DDEB-900B-4691-ADBA-771E92088CF7</string>
 	<key>DimBackgroundWindows</key>
@@ -1608,17 +1608,17 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>157 495 590 333 0 0 1920 1177 </string>
+	<string>701 440 595 193 0 0 1920 1177 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>650 589 620 392 0 0 1920 1177 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>447 642 796 473 0 0 1920 1177 </string>
+	<string>214 2045 770 429 -474 1200 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>19 16 960 1142 0 0 1920 1177 </string>
+	<string>-474 1200 2560 1417 -474 1200 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>160 160 950 858 0 0 1920 1177 </string>
+	<string>970 160 790 858 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>160 599 790 419 0 0 1920 1177 </string>
+	<string>160 160 790 419 0 0 1920 1177 </string>
 	<key>NeverWarnAboutShortLivedSessions_2FB2DDEB-900B-4691-ADBA-771E92088CF7</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_2FB2DDEB-900B-4691-ADBA-771E92088CF7_selection</key>
@@ -2203,7 +2203,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Monaco 12</string>
+			<string>FiraCode-Light 13</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -2986,7 +2986,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-02-13T20:01:55Z</date>
+	<date>2018-03-09T15:45:38Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
