@@ -26,6 +26,7 @@ setopt AUTO_CD
 setopt MULTIOS
 
 export EDITOR="nvim"
+export PATH="/usr/local/opt/python@2/bin:$PATH"
 
 bindkey -M vicmd "/" history-incremental-search-backward
 bindkey -M vicmd "?" history-incremental-search-forward
@@ -51,4 +52,3 @@ alias flushdns="sudo killall -HUP mDNSResponder"
 alias npmglob="npm list -g --depth=0"
 alias nv='f -t -e nvim'
 alias iosim='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/'
-export PATH="/usr/local/opt/python@2/bin:$PATH"
