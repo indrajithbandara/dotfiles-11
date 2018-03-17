@@ -1,6 +1,6 @@
 " Set color scheme
-colo vim-material
-let g:airline_theme='material'
+colo seoul256
+let g:airline_theme='deus'
 
 set nocursorline
 set relativenumber number
