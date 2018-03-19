@@ -35,15 +35,12 @@
     - reattach-to-user-namespace
     - redis
     - noti
-    - koekeishiya/formulae/skhd
-    - chunkwm
     - kubectl
 
 - name: Tap brew formulae
   homebrew_tap: name={{ item }} state=present
   with_items:
     - caskroom/fonts
-    - crisidev/homebrew-chunkwm
 
 - name: Run this task before homebrew_cask module, so that sudo cache gets refreshed.
   command: echo none
@@ -70,9 +67,7 @@
     - karabiner-elements
     - viscosity
     - whatsapp
-    - font-hack-nerd-font
-    - font-firacode-nerd-font
-    - font-input
+    - font-meslo-nerd-font
 
 - name: Cleanup Brew packages
   command: brew cleanup
