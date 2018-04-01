@@ -1,4 +1,3 @@
----
 - name: Install prezto
   git: repo=https://github.com/sorin-ionescu/prezto.git dest=~/.zprezto force=yes
 

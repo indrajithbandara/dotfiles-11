@@ -1,6 +1,4 @@
----
 - include: homebrew.yml
 - include: pip.yml
-
-- name: 'Fuck dashboard'
-  shell: defaults write com.apple.dashboard mcx-disabled -bool true
+- include: npm.yml
+- inlcude: defaults.yml

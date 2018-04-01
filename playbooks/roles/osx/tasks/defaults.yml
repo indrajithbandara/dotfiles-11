@@ -1,0 +1,15 @@
+- name: Disable dashboard
+  osx_defaults:
+    domain: com.apple.dashboard
+    key: mcx-disabled
+    type: bool
+    value: true
+    state: present
+
+- name: Make Atom vim-mode-plus work properly
+  osx_defaults:
+    domain: com.github.atom
+    key: ApplePressAndHoldEnabled
+    type: bool
+    value: false
+    state: present

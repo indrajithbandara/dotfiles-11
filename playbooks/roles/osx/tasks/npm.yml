@@ -3,4 +3,3 @@
   with_items:
     - yarn
     - ternjs
-    - alfred-npms

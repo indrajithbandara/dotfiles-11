@@ -12,3 +12,4 @@ home/.config/ranger/
 home/.config/stetic/
 home/.config/xbuild/
 home/.config/yarn/
+playbooks/osx.retry

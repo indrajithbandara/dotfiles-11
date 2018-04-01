@@ -1,8 +1,7 @@
----
 - name: Update Homebrew
   homebrew: update_homebrew=yes
 
-- name: Install libraries with Homebrew
+- name: Install apps with Homebrew
   homebrew: name={{ item }} state=present
   with_items:
     - tig
@@ -10,11 +9,11 @@
     - graphviz
     - fortune
     - git
+    - git-lfs
     - pv
     - n
     - tldr
     - neovim
-    - ranger
     - zsh
     - zsh-syntax-highlighting
     - watch
@@ -24,7 +23,6 @@
     - node
     - httpie
     - cask
-    - tree
     - openssl
     - ack
     - nmap
@@ -33,9 +31,11 @@
     - fasd
     - tmux
     - reattach-to-user-namespace
-    - redis
     - noti
+    - awscli
+    - go
     - kubectl
+    - kryptco/tap/kr
 
 - name: Tap brew formulae
   homebrew_tap: name={{ item }} state=present
@@ -57,17 +57,16 @@
     - docker
     - virtualbox
     - vagrant
-    - vagrant-manager
     - dropbox
     - ngrok
-    - flux
     - spectacle
-    - postman
     - dash
     - karabiner-elements
     - viscosity
     - whatsapp
-    - font-meslo-nerd-font
+    - font-hack-nerd-font
+    - atom
+    - spotify
 
 - name: Cleanup Brew packages
   command: brew cleanup
