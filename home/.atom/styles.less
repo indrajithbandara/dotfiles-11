@@ -1,0 +1,104 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+// style the background color of the tree view
+.tree-view {
+  // background-color: whitesmoke;
+}
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+  text-rendering: optimizeLegibility;
+  font-family: LigaInconsolata;
+}
+
+// style UI elements inside atom-text-editor
+atom-text-editor .cursor {
+  // border-color: red;
+}
+
+.line.cursor-line, .line-number, .cursor-line-no-selection { background: transparent !important; }
+
+// .line-number { color: white; }
+
+atom-text-editor.editor {
+  .syntax--string.syntax--quoted,
+  .syntax--string.syntax--regexp {
+    -webkit-font-feature-settings: "liga" off, "calt" off;
+  }
+
+  .invisible-character.leading-whitespace.indent-guide,
+  .invisible-character.eol.indent-guide,
+  .invisible-character.eol {
+    color: rgb(138, 136, 136);
+    opacity: 1;
+  }
+
+  .syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
+    font-size: 14.5px;
+    font-family: OperatorMono-BookItalic;
+  }
+
+  .syntax--comment {
+    font-size: 14.5px;
+    font-family: OperatorMono-BookItalic;
+  }
+}
+
+atom-panel.tool-panel {
+  font-size: 0.88em;
+}
+
+.file.entry.list-item.selected::before,
+.directory.entry.list-nested-item.selected::before { background-color: transparent; }
+.atom-dock-toggle-button-inner.left { display: none; }
+
+.tab.sortable,
+.atom-dock-inner.atom-dock-open.left,
+.texteditor.tab.sortable.active,
+.texteditor.tab.sortable,
+.list-inline.tab-bar.inset-panel {
+  background: rgb(49, 52, 63);
+  box-shadow: none;
+  border: none !important;
+}
+
+.no-title-bar-left-dock-workaround {
+  border-right: 1px solid rgb(38, 40, 49);
+}
+
+atom-pane.pane,
+atom-pane.pane.active {
+  border: none !important;
+}
+
+atom-panel.header.tool-panel.panel-header {
+  display: none;
+}
+
+atom-pane-resize-handle::before {
+  color: red;
+}
+
+atom-pane-container atom-pane-axis.horizontal > atom-pane-resize-handle {
+  border-right: 2px solid #63677e;
+}
+
+// atom-pane.active.tab.active:before {
+//   top: 6px;
+//   bottom: 6px;
+// }

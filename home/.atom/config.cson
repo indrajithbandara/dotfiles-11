@@ -1,0 +1,39 @@
+"*":
+  "atom-ide-ui":
+    use: {}
+  "color-picker":
+    automaticReplace: true
+    triggerKey: "K"
+  core:
+    disabledPackages: [
+      "git-diff"
+      "github"
+      "wrap-guide"
+      "status-bar"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "one-dark-vivid-syntax"
+    ]
+    titleBar: "custom"
+  docblockr:
+    c_style_block_comments: true
+  editor:
+    fontSize: 15
+    invisibles:
+      space: " "
+    showInvisibles: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "b4b42c21-4d51-4446-90ed-00853512c929"
+  "file-types":
+    ".*.yml$": "source.ansible"
+    ".*/group_vars/.*": "source.ansible"
+    ".*/host_vars/.*": "source.ansible"
+  "no-title-bar":
+    automaticTrafficLightsPadding: true
+  "status-bar":
+    isVisible: false
+  welcome:
+    showOnStartup: false
