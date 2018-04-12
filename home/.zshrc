@@ -41,8 +41,14 @@ function kubens() {
     then
         kubectl config set-context $(kubectl config current-context) --namespace="$1"
     else
-      echo "No namespace specified"
+        echo "No namespace specified"
     fi
+}
+
+function docker_clean() {
+  docker volume rm $(docker volume ls -qf dangling=true)
+  docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
+  docker rm $(docker ps -qa --no-trunc --filter "status=exited")
 }
 
 # Aliases

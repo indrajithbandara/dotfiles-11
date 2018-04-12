@@ -1,4 +1,7 @@
 - hosts: localhost
+  vars:
+    - user_home: "/Users/vladimiriacob"
+    - dotfiles_dir: "{{ user_home }}/dotfiles"
   roles:
-    - role: osx
+    # - role: osx
     - role: common

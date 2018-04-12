@@ -1,11 +1,11 @@
 - name: Install prezto
-  git: repo=https://github.com/sorin-ionescu/prezto.git dest=~/.zprezto force=yes
+  git: repo=https://github.com/sorin-ionescu/prezto.git dest=~/.zprezto
 
 - name: Symlink dotfiles
-  file: src=~/dotfiles/home/{{ item }}
-        dest=~/{{ item }}
-        state=link
-        force=yes
+  file:
+    src: "{{ dotfiles_dir }}/home/{{ item }}"
+    dest: "~/{{ item }}"
+    state: link
   with_items:
     - .zpreztorc
     - .zlogin
@@ -14,16 +14,41 @@
     - .zshrc
     - .config
     - .gitconfig
-    - .tmux.conf
+    - .atom
 
-- name: Install tmux-plugin-manager
-  git: repo=https://github.com/tmux-plugins/tpm dest=~/.tmux/plugins/tpm
+- name: Set user home in neovim config
+  replace:
+    path: "{{ user_home }}/.config/nvim/plugins.vim"
+    regexp: "user_home"
+    replace: "{{ user_home }}"
+
+- name: Install Atom packages
+  command: "apm install {{ item }}"
+  with_items:
+    - "atom-ide-ui@0.9.4"
+    - "color-picker@2.2.5"
+    - "docblockr@0.13.7"
+    - "ex-mode@0.18.0"
+    - "hyperclick@0.1.5"
+    - "ide-typescript@0.7.6"
+    - "language-ansible@0.2.2"
+    - "language-marko@2.9.4"
+    - "language-vue@0.23.1"
+    - "no-title-bar@1.11.4"
+    - "one-dark-vivid-syntax@1.8.0"
+    - "relative-numbers@0.9.0"
+    - "seti-icons@1.5.4"
+    - "vim-mode-plus@1.31.1"
 
 - name: Create dein folder
-  file: path=~/.dein state=directory
+  file:
+    path: "{{ user_home }}/.dein"
+    state: directory
 
 - name: Fetch dein install script
   get_url: url=https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh dest=/tmp/dein_install.sh
 
 - name: Install dein
   script: /tmp/dein_install.sh ~/.dein
+  args:
+    creates: "{{ user_home }}/.dein"
