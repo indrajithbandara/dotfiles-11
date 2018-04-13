@@ -1711,13 +1711,13 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>557 256 889 670 0 0 1920 1177 </string>
+	<string>301 123 889 536 0 0 1920 1177 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>650 589 620 392 0 0 1920 1177 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>395 518 1018 447 0 0 1920 1177 </string>
+	<string>826 342 918 492 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>45 49 1192 963 0 0 1920 1177 </string>
+	<string>62 34 1150 1112 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>970 -159 1320 1177 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -3140,7 +3140,7 @@
 	<key>UseBorder</key>
 	<false/>
 	<key>UseMetal</key>
-	<true/>
+	<false/>
 	<key>WindowNumber</key>
 	<false/>
 	<key>WordCharacters</key>
