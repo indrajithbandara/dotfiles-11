@@ -1,0 +1,77 @@
+# reload config
+cmd + alt + ctrl - r : khd -e "reload"
+
+# open terminal, blazingly fast compared to iTerm/Hyper
+alt - return : open -na /Applications/iTerm.app
+
+# modes
+# orange purple 0xffdf5d45
+# light purple 0xff460a2b
+# light skin 0xffdcbeaf
+khd mode default on_enter chunkc set focused_border_color 0xffdcbeaf; chunkc border::color 0xffdcbeaf
+
+khd mode resize on_enter  chunkc set focused_border_color 0xff460a2b; chunkc border::color 0xff460a2b
+khd mode move on_enter
+khd mode send on_enter
+khd mode desktop on_enter
+
+# toggle modes
+alt - r : khd -e "mode activate resize"
+alt - m : khd -e "mode activate move"
+alt - s : khd -e "mode activate send"
+alt - d : khd -e "mode activate desktop"
+
+resize  - q : khd -e "mode activate default"
+move    - q : khd -e "mode activate default"
+send    - q : khd -e "mode activate default"
+desktop - q : khd -e "mode activate default"
+
+# default mode
+alt - h : chunkc tiling::window --focus west
+alt - j : chunkc tiling::window --focus south
+alt - k : chunkc tiling::window --focus north
+alt - l : chunkc tiling::window --focus east
+
+# toggle window fullscreen
+alt - f : chunkc tiling::window --toggle fullscreen
+# toggle window split type
+alt - e : chunkc tiling::window --toggle split
+
+# send mode
+send - p : chunkc tiling::window --send-to-desktop prev
+send - n : chunkc tiling::window --send-to-desktop next
+send - 1 : chunkc tiling::window --send-to-desktop 1
+send - 2 : chunkc tiling::window --send-to-desktop 2
+send - 3 : chunkc tiling::window --send-to-desktop 3
+send - 4 : chunkc tiling::window --send-to-desktop 4
+send - 5 : chunkc tiling::window --send-to-desktop 5
+send - 6 : chunkc tiling::window --send-to-desktop 6
+
+# move mode
+move - h : chunkc tiling::window --warp west
+move - j : chunkc tiling::window --warp south
+move - k : chunkc tiling::window --warp north
+move - l : chunkc tiling::window --warp east
+
+# resize mode
+resize - h : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge west
+resize - j : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge south
+resize - k : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge north
+resize - l : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge east
+
+
+# disable swallowing of unregistred keypresses in non-default modes
+khd void_unlisted_bind off
+# desktop mode
+desktop - h : khd -p "cmd + alt - z"
+desktop - l : khd -p "cmd + alt - c"
+desktop - 1 : khd -p "cmd + alt - 1"
+desktop - 2 : khd -p "cmd + alt - 2"
+desktop - 3 : khd -p "cmd + alt - 3"
+desktop - 4 : khd -p "cmd + alt - 4"
+desktop - 5 : khd -p "cmd + alt - 5"
+desktop - 6 : khd -p "cmd + alt - 6"
+
+ctrl + alt - a : chunkc tiling::desktop --layout bsp
+ctrl + alt - s : chunkc tiling::desktop --layout monocle
+ctrl + alt - d : chunkc tiling::desktop --layout float
