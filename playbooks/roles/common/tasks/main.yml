@@ -12,6 +12,7 @@
     - .zlogout
     - .gitignore
     - .zshrc
+    - .tmux.conf
     - .config
     - .gitconfig
     - .atom
