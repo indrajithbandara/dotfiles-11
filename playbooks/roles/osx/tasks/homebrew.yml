@@ -36,6 +36,10 @@
     - go
     - kubectl
     - kryptco/tap/kr
+    - fd
+    - fzf
+    - jq
+    - telnet
 
 - name: Tap brew formulae
   homebrew_tap: name={{ item }} state=present

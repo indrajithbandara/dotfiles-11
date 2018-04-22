@@ -3,15 +3,18 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
-set runtimepath+=user_home/.dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=/Users/vladimiriacob/.dein/repos/github.com/Shougo/dein.vim
 
 " Required:
-call dein#begin('user_home/.dein')
+call dein#begin('/Users/vladimiriacob/.dein')
 " Let dein manage dein
 " Required:
 call dein#add('Shougo/dein.vim')
 
 " Add or remove your plugins here:
+call dein#add('posva/vim-vue')
+call dein#add('chriskempson/base16-vim')
+call dein#add('hzchirs/vim-material')
 call dein#add('junegunn/seoul256.vim')
 call dein#add('Shougo/deoplete.nvim')
 call dein#add('vim-airline/vim-airline')
@@ -30,6 +33,7 @@ call dein#add('christoomey/vim-tmux-navigator')
 " call dein#add('hashivim/vim-terraform')
 call dein#add('ryanoasis/vim-devicons')
 call dein#add('airblade/vim-gitgutter')
+call dein#add('junegunn/fzf')
 
 
 " JS plugins

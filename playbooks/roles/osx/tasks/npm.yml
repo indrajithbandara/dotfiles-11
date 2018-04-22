@@ -3,3 +3,9 @@
   with_items:
     - yarn
     - ternjs
+    - tern
+    - angular-cli
+    - bower
+    - http-server
+    - vue-cli
+    - vtop

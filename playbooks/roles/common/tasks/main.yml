@@ -25,20 +25,21 @@
 - name: Install Atom packages
   command: "apm install {{ item }}"
   with_items:
-    - "atom-ide-ui@0.9.4"
-    - "color-picker@2.2.5"
+    - "atom-ide-ui@0.11.0"
+    - "color-picker@2.3.0"
     - "docblockr@0.13.7"
     - "ex-mode@0.18.0"
     - "hyperclick@0.1.5"
     - "ide-typescript@0.7.6"
     - "language-ansible@0.2.2"
-    - "language-marko@2.9.4"
+    - "language-terraform@0.8.1"
     - "language-vue@0.23.1"
     - "no-title-bar@1.11.4"
     - "one-dark-vivid-syntax@1.8.0"
+    - "prettier-atom@0.53.0"
     - "relative-numbers@0.9.0"
     - "seti-icons@1.5.4"
-    - "vim-mode-plus@1.31.1"
+    - "vim-mode-plus@1.32.0"
 
 - name: Create dein folder
   file:

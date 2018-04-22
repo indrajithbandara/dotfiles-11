@@ -9,7 +9,6 @@
  * http://lesscss.org
  */
 
-
 /*
  * Examples
  * (To see them, uncomment and save)
@@ -22,8 +21,9 @@
 
 // style the background and foreground colors on the atom-text-editor-element itself
 atom-text-editor {
+  // -webkit-font-smoothing: antialiased;
+  // font-weight: lighter;
   text-rendering: optimizeLegibility;
-  font-family: LigaInconsolata;
 }
 
 // style UI elements inside atom-text-editor
@@ -31,14 +31,18 @@ atom-text-editor .cursor {
   // border-color: red;
 }
 
-.line.cursor-line, .line-number, .cursor-line-no-selection { background: transparent !important; }
+.line.cursor-line,
+.line-number,
+.cursor-line-no-selection {
+  background: transparent !important;
+}
 
 // .line-number { color: white; }
 
 atom-text-editor.editor {
   .syntax--string.syntax--quoted,
   .syntax--string.syntax--regexp {
-    -webkit-font-feature-settings: "liga" off, "calt" off;
+    -webkit-font-feature-settings: 'liga' off, 'calt' off;
   }
 
   .invisible-character.leading-whitespace.indent-guide,
@@ -49,13 +53,15 @@ atom-text-editor.editor {
   }
 
   .syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
-    font-size: 14.5px;
-    font-family: OperatorMono-BookItalic;
+    // font-size: 13px;
+    // font-family: Operator Mono;
+    font-style: italic;
   }
 
   .syntax--comment {
-    font-size: 14.5px;
-    font-family: OperatorMono-BookItalic;
+    // font-size: 13px;
+    // font-family: Operator Mono;
+    font-style: italic;
   }
 }
 
@@ -64,8 +70,12 @@ atom-panel.tool-panel {
 }
 
 .file.entry.list-item.selected::before,
-.directory.entry.list-nested-item.selected::before { background-color: transparent; }
-.atom-dock-toggle-button-inner.left { display: none; }
+.directory.entry.list-nested-item.selected::before {
+  background-color: transparent;
+}
+.atom-dock-toggle-button-inner.left {
+  display: none;
+}
 
 .tab.sortable,
 .atom-dock-inner.atom-dock-open.left,
@@ -82,7 +92,8 @@ atom-panel.tool-panel {
 }
 
 atom-pane.pane,
-atom-pane.pane.active {
+atom-pane.pane.active,
+.header.list-item.project-root-header {
   border: none !important;
 }
 

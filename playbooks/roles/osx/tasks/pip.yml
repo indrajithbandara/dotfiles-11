@@ -3,6 +3,7 @@
   with_items:
     - virtualenv
     - neovim
+    - shade
 
 - name: Install pip3 pkgs
   pip: name={{ item }} executable=pip3

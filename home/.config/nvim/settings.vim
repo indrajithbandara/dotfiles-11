@@ -1,6 +1,6 @@
 " Set color scheme
-colo seoul256
-let g:airline_theme='deus'
+colo vim-material
+let g:airline_theme='material'
 
 set nocursorline
 set relativenumber number
@@ -49,7 +49,7 @@ let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#tabline#fnamemod = ':t'
 
 " show tabs numbers
-" let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
 " show custom tab numbers by airline
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#tabline#buffers_label = ''

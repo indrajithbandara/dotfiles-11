@@ -10,6 +10,7 @@
       "github"
       "wrap-guide"
       "status-bar"
+      "linter"
     ]
     telemetryConsent: "no"
     themes: [
@@ -20,6 +21,7 @@
   docblockr:
     c_style_block_comments: true
   editor:
+    fontFamily: "LigaInconsolata"
     fontSize: 15
     invisibles:
       space: " "
@@ -33,6 +35,13 @@
     ".*/host_vars/.*": "source.ansible"
   "no-title-bar":
     automaticTrafficLightsPadding: true
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+    prettierOptions:
+      semi: false
+      singleQuote: true
+      trailingComma: "all"
   "status-bar":
     isVisible: false
   welcome:
